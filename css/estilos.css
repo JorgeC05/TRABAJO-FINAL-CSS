@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(0, 0, 0);
+  font-family: Dancing Script;
+  color:rgb(255, 255, 255);
+}
+a{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+}
+p{
+  margin-top:  0;
+}
+.contenedor{
+  width:100%;
+  max-width: 900px;
+  margin: auto;
+
+  /*FLex*/
+  display: flex;
+  flex-direction:column;
+}
+/*-----------------------------HEADER-------------------------*/
+
+header{
+  background-color: #5b7989;
+  width: 100%;
+  padding: 20px;
+
+  /*Flex*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+header .titulo{
+  font-size: 30px;
+}
+
+nav{
+  width: 30%;
+  /*Flex*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a{
+  font-size: 1.3em;
+  text-align: center;
+  padding: 5px;
+  /*background-color: rgb(10, 94, 15);*/
+
+  /*Flex*/
+  flex-grow: 1;
+}
+  /*------------------------IMG CENTRAL------------------------*/
+section .img-central {
+  background-color: #82c3a6;
+  display: flex;
+  justify-content: space-around;
+}
+
+section .img-central img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50%;
+  width: 77%;
+}
+/*---------------------------IMG DOBLE--------------------------*/
+
+section .img-doble {
+  background-color: #d5c75f;
+  display: flex;
+}
+
+section .img-doble .img {
+  margin: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+  justify-content: space-between;
+
+}
+section .img-doble .img img {
+  width: 90%;
+  height: 90%;
+}
+section .img-doble .img a {
+  color: rgb(3, 3, 3);
+  font-size: 35px;
+}
+/*------------------------FOOTER--------------------------------*/
+
+footer{
+  background-color: #C6d5c5;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  padding: 10px;
+
+}
+
+footer .contacto, .terminos,.redes, .derechos{
+  width: 25%;
+  flex-grow: 1;
+  margin: 15px;
+}
+footer a{
+    color:rgb(0, 0, 0);
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+}
+.redes, .terminos, .contacto, .derechos{
+  color:rgb(0, 0, 0);
+  /*background-color: rgba(39, 124, 161, 0.37);*/
+}
