@@ -3,18 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   background-color: rgb(0, 0, 0);
   font-family: Dancing Script;
   color:rgb(255, 255, 255);
 }
+
 a{
   text-decoration: none;
   color:rgb(255, 255, 255);
 }
+
 p{
   margin-top:  0;
 }
+
+.img-central img, .img-doble img{
+  box-shadow: 2px 2px #02010a;
+}
+
 .contenedor{
   width:100%;
   max-width: 900px;
@@ -30,6 +38,7 @@ header{
   background-color: #5b7989;
   width: 100%;
   padding: 20px;
+  border-radius: 10px 10px 0 0;
 
   /*Flex*/
   display: flex;
@@ -38,8 +47,9 @@ header{
   align-items: center;
 
 }
-header .titulo{
+header .titulo p{
   font-size: 30px;
+  text-shadow: 2px 2px #02010a;
 }
 
 nav{
@@ -63,19 +73,20 @@ nav a{
 section .img-central {
   background-color: #82c3a6;
   display: flex;
+  width: 100%;
   justify-content: space-around;
 }
 
 section .img-central img {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 50%;
-  width: 77%;
+  width: 80%;
 }
 /*---------------------------IMG DOBLE--------------------------*/
 
 section .img-doble {
   background-color: #d5c75f;
+  border: 1px solid black;
   display: flex;
 }
 
@@ -89,9 +100,22 @@ section .img-doble .img {
   justify-content: space-between;
 
 }
+
+section .img-doble .img:nth-child(1) img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+  border: 2px solid black;
+}
+
+section .img-doble .img:nth-child(2) img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+  border: 2px solid black;
+}
+
 section .img-doble .img img {
   width: 90%;
-  height: 90%;
+
 }
 section .img-doble .img a {
   color: rgb(3, 3, 3);
@@ -101,6 +125,7 @@ section .img-doble .img a {
 
 footer{
   background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
   display: flex;
   justify-content: space-around;
   text-align: left;
@@ -113,6 +138,7 @@ footer .contacto, .terminos,.redes, .derechos{
   flex-grow: 1;
   margin: 15px;
 }
+
 footer a{
     color:rgb(0, 0, 0);
 }
@@ -121,7 +147,9 @@ footer a{
   display: flex;
   flex-direction: column;
 }
+
 .redes, .terminos, .contacto, .derechos{
+  width: 100%;
   color:rgb(0, 0, 0);
   /*background-color: rgba(39, 124, 161, 0.37);*/
 }
