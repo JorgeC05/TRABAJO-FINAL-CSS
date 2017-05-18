@@ -19,10 +19,6 @@ p{
   margin-top:  0;
 }
 
-.img-central img, .img-doble img{
-  box-shadow: 2px 2px #02010a;
-}
-
 .contenedor{
   width:100%;
   max-width: 900px;
@@ -30,7 +26,8 @@ p{
 
   /*FLex*/
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
+
 }
 /*-----------------------------HEADER-------------------------*/
 
@@ -70,58 +67,22 @@ nav a{
   flex-grow: 1;
 }
   /*------------------------IMG CENTRAL------------------------*/
-section .img-central {
-  background-color: #82c3a6;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-section .img-central img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 80%;
-}
-/*---------------------------IMG DOBLE--------------------------*/
-
-section .img-doble {
+section .galeria {
   background-color: #d5c75f;
-  border: 1px solid black;
   display: flex;
+  flex-wrap: wrap;
 }
 
-section .img-doble .img {
-  margin: 20px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 5px;
-  justify-content: space-between;
+section .galeria .images {
+  margin: 1em;
+  width: calc(33.33% - 2em);
 
 }
 
-section .img-doble .img:nth-child(1) img:hover{
-  transform: rotate(10deg);
-  box-shadow: 2px 2px #82c3a6;
-  border: 2px solid black;
+section .images img{
+  width: 100%;
 }
 
-section .img-doble .img:nth-child(2) img:hover{
-  transform: translate(20px,-5px);
-  box-shadow: 2px 2px #82c3a6;
-  border: 2px solid black;
-}
-
-section .img-doble .img img {
-  width: 90%;
-  transition: all 2s;
-
-}
-section .img-doble .img a {
-  color: rgb(3, 3, 3);
-  font-size: 35px;
-}
 /*------------------------FOOTER--------------------------------*/
 
 footer{
