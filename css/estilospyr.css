@@ -83,6 +83,15 @@ section .images img{
   width: 100%;
 }
 
+section .images:nth-child(1){
+  filter: blur(10px);
+}
+section .images:nth-child(even){
+  filter: grayscale(100%);
+}
+section .images:nth-child(3){
+  filter: sepia(90%);
+}
 /*------------------------FOOTER--------------------------------*/
 
 footer{
