@@ -81,6 +81,7 @@ section .galeria .images {
 
 section .images img{
   width: 100%;
+  height: 200px;
 }
 
 section .images:nth-child(1){
@@ -124,6 +125,25 @@ footer a{
   color:rgb(0, 0, 0);
   /*background-color: rgba(39, 124, 161, 0.37);*/
 }
+/*-----------------ANIMACIÓN-----------------------------*/
+
+@keyframes slider {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+.contenedor{
+  animation-name: slider;
+  animation-duration: 1.5s;
+}
+
 /*--------------------MOVILES---------------------*/
 /*-----------------------------------------------------*/
 /*-------------------------------------------*/
@@ -163,23 +183,4 @@ section .galeria .images {
 footer{
   display: flex;
   flex-direction: column;
-}
-
-/*-----------------ANIMACIÓN-----------------------------*/
-
-@keyframes slider {
-  0%{
-    margin-top: 150%;
-  }
-  60%{
-    margin-top: -5%;
-  }
-  100%{
-    margin-top: 0%;
-  }
-}
-
-.contenedor{
-  animation-name: slider;
-  animation-duration: 1.5s;
 }
