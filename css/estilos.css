@@ -60,7 +60,7 @@ nav{
 }
 
 nav a{
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-align: center;
   padding: 5px;
   /*background-color: rgb(10, 94, 15);*/
@@ -79,7 +79,7 @@ section .img-central {
 section .img-central img {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 80%;
+  width: 85%;
   height: 300px;
 }
 /*---------------------------IMG DOBLE--------------------------*/
@@ -136,7 +136,7 @@ footer{
 }
 
 footer .contacto, .terminos,.redes, .derechos{
-  width: 25%;
+  width: 100%;
   flex-grow: 1;
   margin: 15px;
 }
@@ -151,7 +151,6 @@ footer a{
 }
 
 .redes, .terminos, .contacto, .derechos{
-  width: 100%;
   color:rgb(0, 0, 0);
   /*background-color: rgba(39, 124, 161, 0.37);*/
 }
@@ -207,7 +206,8 @@ section .img-central img {
   margin-top: 20px;
   margin-bottom: 20px;
   max-height: 200px;
-  width: 81%;
+  width: 80%;
+  height: 300px;
 
 }
 /*---------------------IMG DOBLE-----------------------*/
@@ -229,4 +229,8 @@ section .img-doble img{
 footer{
   display: flex;
   flex-direction: column;
+}
+
+footer .contacto, .terminos, .redes, .derechos{
+width: 90%;
 }
